@@ -157,6 +157,11 @@ article h2 {
   color: var(--accent-blue);
   text-shadow: 0 0 8px var(--accent-blue);
   margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+aside  {
+  text-align: center;
 }
 
 /* -------------------------------
