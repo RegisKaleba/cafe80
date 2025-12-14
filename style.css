@@ -13,6 +13,18 @@
   --font-body: "Poppins", sans-serif;
 }
 
+h1 {
+  --bg: #080010;
+  --text: #f4f4f4;
+  --accent-pink: #ff27c3;
+  --accent-blue: #00eaff;
+  --card: rgba(255,255,255,0.08);
+  --radius: 14px;
+  --shadow-neon: 0 0 10px var(--accent-pink), 0 0 20px var(--accent-blue);
+  --font-title: "Orbitron", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
+
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap");
 
