@@ -1,0 +1,322 @@
+/* -------------------------------
+   Thème années 80 – Neon
+--------------------------------*/
+:root {
+  --bg: #080010;
+  --text: #f4f4f4;
+  --accent-pink: #ff27c3;
+  --accent-blue: #00eaff;
+  --card: rgba(255,255,255,0.08);
+  --radius: 14px;
+  --shadow-neon: 0 0 10px var(--accent-pink), 0 0 20px var(--accent-blue);
+  --font-title: "Orbitron", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap");
+
+/* -------------------------------
+   Reset minimal
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* -------------------------------
+   Header et navigation
+--------------------------------*/
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  color: var(--accent-pink);
+  text-shadow: var(--shadow-neon);
+  margin-bottom: 1rem;
+}
+
+header img {
+  border-radius: var(--radius);
+  box-shadow: 0 0 18px var(--accent-blue);
+}
+
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent-blue);
+  margin: 0 10px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+nav a:hover {
+  color: var(--accent-pink);
+  text-shadow: var(--shadow-neon);
+}
+
+/* -------------------------------
+   Galerie
+--------------------------------*/
+.gallery {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.gallery img {
+  border-radius: var(--radius);
+  width: 300px;
+  height: auto;
+  box-shadow: 0 0 20px #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-neon);
+}
+
+/* -------------------------------
+   3 Colonnes : Menu / Centre / Réservation
+--------------------------------*/
+.menu-reservation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: stretch; /* même hauteur */
+}
+
+.menu-reservation article {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-neon);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Uniformisation des espaces internes */
+.menu-reservation label,
+.menu-reservation input,
+.menu-reservation button,
+.menu-reservation ul,
+.menu-reservation p,
+.menu-reservation h2 {
+  margin-bottom: 0.7rem;
+}
+
+/* Enlever tout max-width parasite du formulaire */
+#reservation {
+  max-width: none !important;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .menu-reservation {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------
+   Titres
+--------------------------------*/
+article h2 {
+  font-family: var(--font-title);
+  color: var(--accent-blue);
+  text-shadow: 0 0 8px var(--accent-blue);
+  margin-bottom: 0.5rem;
+}
+
+/* -------------------------------
+   Listes
+--------------------------------*/
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 0.3rem 0;
+  font-size: 1.1rem;
+}
+
+/* -------------------------------
+   Formulaire
+--------------------------------*/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+label {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: var(--radius);
+  border: none;
+  background: #150025;
+  color: var(--text);
+  outline: 1px solid var(--accent-pink);
+}
+
+button {
+  background: var(--accent-pink);
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-neon);
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--accent-blue);
+  color: #000;
+}
+
+/* -------------------------------
+   Tableau horaires
+--------------------------------*/
+aside {
+  margin-top: 3rem;
+}
+
+aside h2 {
+  font-family: var(--font-title);
+  color: var(--accent-pink);
+  margin-bottom: 1rem;
+  text-shadow: var(--shadow-neon);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: var(--accent-blue);
+  color: #000;
+}
+
+tr:nth-child(even) {
+  background: rgba(255,255,255,0.05);
+}
+
+/* -------------------------------
+   Liens "Retour en haut"
+--------------------------------*/
+a[href="#"] {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent-pink);
+  font-weight: 600;
+}
+
+a[href="#"]:hover {
+  text-shadow: var(--shadow-neon);
+}
+
+/* -------------------------------
+   Footer
+--------------------------------*/
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-neon);
+}
+
+footer a {
+  color: var(--accent-blue);
+}
+
+footer a:hover {
+  text-shadow: var(--shadow-neon);
+}
+
+.carousel {
+  position: relative;
+  width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* -------------------------------
+   Responsive petites écrans
+--------------------------------*/
+@media (max-width: 700px) {
+  nav a {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .gallery img {
+    width: 90%;
+  }
+}

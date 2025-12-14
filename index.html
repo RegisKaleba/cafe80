@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>La page Web du Dossier 80's</title>
+    <meta
+      name="description"
+      content="Page web qui contient plein d'infos à propos d'un café américain du futur"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Balises H1 à H6 permettent de donner des titres, Marty ! -->
+    <header>
+      <h1 id="home">Café 80's</h1>
+      <img src="img/logo.png" alt="Ma photo" width="200" height="200" />
+      <nav>
+        <a href="https://www.larousse.fr/dictionnaires/francais/accueil/569"
+          >Accueil</a
+        >
+        <a href="#Menu">Le menu</a>
+        <a href="#contacts">Contact</a>
+        <a href="#horraires">Horraires</a>
+        <a href="#reservation">Réservation</a>
+        <a href="Page2.html">Cliquez ici pour voir Doc Brown</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="gallery">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb2%2F3c%2F08%2Fb23c08b73434e2147f1969b2052082dd.jpg&f=1&nofb=1&ipt=2dcbeb5e137344a9eab95d51363d567de10864d72d180a70798dd6aed70dc623"
+          alt="Visuel de l'intérieur du Café"
+          width="500"
+        />
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.praguest.com%2Fimages%2Ficagenda%2Ffrontend%2Fimages%2F220914-al-you-can-cafe80-banner-1920x1080.jpg&f=1&nofb=1&ipt=c4c7d618e7fb5f1f581db5daeeb2d93917c51f30809859b93dae116b38fc91f7"
+          alt="Flyers du Café 80's"
+          width="500"
+        />
+
+        <img
+          src="https://preview.redd.it/izwmzcy04c461.png?width=1080&crop=smart&auto=webp&s=c7b3579c65aeaafd7469204f254232f81fd156b2"
+          alt="Un joyeux groupe de plaisantins au Cafe 80's"
+          width="500"
+        />
+      </div>
+    </main>
+
+    <section class="menu-reservation">
+
+  <article id="Menu">
+    <h2>Boissons</h2>
+    <ul>
+      <li>Café</li>
+      <li>Thé</li>
+      <li>Jus d'orange</li>
+      <li>Pepsi diet</li>
+    </ul>
+
+    <h2>Plats</h2>
+    <ul>
+      <li>Pâtes bolognaises</li>
+      <li>Salade César</li>
+      <li>Pizza Mickaël Jackson</li>
+      <li>Burger maison</li>
+    </ul>
+
+    <a href="#">Retour en haut ↑</a>
+  </article>
+
+  <article id="centre">
+    <h2>Description</h2>
+    <p>Attends une minute, attends une minute. 1h15 du matin ? Ouais. Hé George, j'ai entendu dire que tu as mis Biff KO, bien joué. Rien ne me vient à l'esprit. Tu me complimentes avec beaucoup d'assurance, Doc.
+
+On va faire une petite pause, mais on revient bientôt. Alors, ne bougez pas. Ça va ? Tout va bien ? Oui. Bref, grand-père l'a renversé avec la voiture et l'a ramené à la maison. Il avait l'air si vulnérable, comme un petit chiot perdu, j'ai eu tellement pitié de lui. Oui, bien sûr, d'accord.
+
+En fait, on m'appelle Marty. Combinaison anti-radiations, évidemment, à cause des retombées radioactives des guerres atomiques. C'est vraiment incroyable, un studio de télévision portable ! Pas étonnant que votre président soit acteur, il doit avoir fière allure à la télévision. Vous êtes George McFly. Non, bande de salauds ! Ouais, je sais, si on s'y met vraiment, on peut tout accomplir.</p>
+  </article>
+
+  <article id="reservation">
+    <h2>Formulaire de réservation</h2>
+
+    <form action="#" method="post">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="date">Date de réservation :</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Heure :</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="people">Nombre de personnes :</label>
+      <input type="number" id="people" name="people" min="1" max="12" required />
+
+      <button type="submit">Réserver</button>
+    </form>
+
+    <a href="#">Retour en haut ↑</a>
+  </article>
+
+</section>
+
+    
+
+    <aside id="horraires">
+      <h2>Horaires d'ouverture</h2>
+
+      <table border="1" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Jour</th>
+            <th>Horaires</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Lundi</td>
+            <td>08h00 – 18h00</td>
+          </tr>
+          <tr>
+            <td>Mardi</td>
+            <td>08h00 – 18h00</td>
+          </tr>
+          <tr>
+            <td>Mercredi</td>
+            <td>08h00 – 18h00</td>
+          </tr>
+          <tr>
+            <td>Jeudi</td>
+            <td>08h00 – 22h00</td>
+          </tr>
+          <tr>
+            <td>Vendredi</td>
+            <td>08h00 – 22h00</td>
+          </tr>
+          <tr>
+            <td>Samedi</td>
+            <td>09h00 – 23h00</td>
+          </tr>
+          <tr>
+            <td>Dimanche</td>
+            <td>Fermé</td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+
+    <a href="#">Retour en haut ↑</a>
+
+    <footer id="contacts">
+      <p><strong>Contact :</strong></p>
+      <p>
+        Email :
+        <a href="mailto:Marty.McFly@bythegreatscott.com"
+          >Marty.McFly@bythegreatscott.com</a
+        >
+      </p>
+      <p>Téléphone : <a href="tel:+555123456">555 12 34 56</a></p>
+
+      <p><strong>Réseaux sociaux :</strong></p>
+      <ul>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+
+      <p>© 2025 Café 80's / Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
