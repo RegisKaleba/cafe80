@@ -291,6 +291,33 @@ footer a:hover {
   overflow: hidden;
 }
 
+.slide img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: var(--radius);
+  border: 2px solid var(--accent-pink);
+  box-shadow:
+    0 0 10px var(--accent-pink),
+    0 0 20px var(--accent-blue);
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.slide h3 {
+  font-family: var(--font-title);
+  color: var(--accent-pink);
+  text-shadow: var(--shadow-neon);
+  margin-bottom: 0.4rem;
+}
+
+.slide p {
+  font-family: var(--font-body);
+  color: var(--text);
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
 .slide {
   display: none;
   text-align: center;
